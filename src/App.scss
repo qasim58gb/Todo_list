@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C8A2C8;
+    .app{
+        display: flex;
+        justify-content: center;
+        
+        .todoWarper{
+            margin-top: 5rem;
+            background-color: #5B3256;
+            padding: 2rem 4rem;
+            border-radius: 13px;
+            text-align: center;
+            max-height: 75vh;
+            overflow-y: scroll;
+
+
+            
+            &::-webkit-scrollbar {
+                width: 10px;
+              }
+              
+              /* Track */
+              &::-webkit-scrollbar-track {
+                border-radius: 7px;
+              }
+              
+              /* Handle */
+              &::-webkit-scrollbar-thumb {
+                background:#C8A2C8;
+                border-radius: 7px;
+              }
+
+              &::-webkit-scrollbar-thumb:hover {
+                background: #5B3256; 
+              }
+
+            h1{
+                color: white;
+                padding: 1rem 0rem;
+            }
+
+            .todoForm{
+                margin-bottom: 2rem;
+                input{
+                    padding: .7rem 1rem;
+                    background-color: transparent;
+                    outline: none ;
+                    border: 2px solid #C8A2C8;
+                    border-radius: 7px 0px 0px 7px;
+                    color: white;
+                    width: 15rem;
+                    &::placeholder{
+                        color: white;
+                    }
+                }
+                .btn-todo{
+                    background-color: #C8A2C8;
+                    padding: .7rem 1rem;
+                    outline: none ;
+                    border: 2px solid #C8A2C8;
+                    border-radius: 0px 7px 7px 0px;
+                    color: white;
+                    cursor: pointer;
+
+                }
+            }
+
+            .todos{
+                display: flex;
+                justify-content: space-between;
+                background-color: #C8A2C8;
+                margin-top:1rem;
+                padding: 0.7rem 1rem;
+                color: white;
+                width: 100%;
+                border-radius: 7px;
+
+                .completed{
+                    text-decoration-line: line-through;
+                    text-decoration-color: #5B3256;
+                    text-decoration-style: solid;
+                    opacity: .5;
+                }
+                p{
+                    cursor: pointer;
+                }
+
+                .todos__icon--item{ 
+                    padding: 0px .5rem;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+}
